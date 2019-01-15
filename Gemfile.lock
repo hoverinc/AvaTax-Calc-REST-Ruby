@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    avatax-v1 (14.4.4)
+    avatax-v1 (15.0.1)
       addressable (~> 2.3)
       json (~> 1.8)
       rest-client (~> 1.7)

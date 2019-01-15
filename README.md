@@ -1,4 +1,4 @@
-avatax.rb
+avatax-v1.rb
 =====================
 [Other Samples](http://developer.avalara.com/avatax/sample-code)
 
