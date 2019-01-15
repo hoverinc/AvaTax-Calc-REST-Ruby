@@ -19,8 +19,8 @@ Dependencies
 
 Requirements
 ----------
-- Add the `avatax` gem to your Gemfile with `gem 'avatax'`
-- Run `bundle install` to retrieve `avatax` and all its dependencies
+- Add the `avatax-v1` gem to your Gemfile with `gem 'avatax-v1'`
+- Run `bundle install` to retrieve `avatax-v1` and all its dependencies
 - Authentication requires an valid **Account Number** and **License Key**. If you do not have an AvaTax account, a free trial account can be acquired through our [developer site](http://developer.avalara.com/avatax/get-started)
 - Specify your authentication credentials as
   - environment variables,
@@ -36,13 +36,13 @@ $ AVATAX_ACCOUNT_NUMBER=1234567890 AVATAX_LICENSE_KEY=A1B2C3D4E5F6G7H8 AVATAX_SE
 Credentials from YAML file
 --------------------------
 ```ruby
-AvaTax.configure_from 'credentials.yml.example'
+AvaTaxV1.configure_from 'credentials.yml.example'
 ```
 
 Credentials in source
 ---------------------
 ```ruby
-AvaTax.configure do
+AvaTaxV1.configure do
   account_number '1234567890'
   license_key 'A1B2C3D4E5F6G7H8'
   service_url 'https://development.avalara.net'
@@ -54,8 +54,8 @@ Examples
 
 | Filename           | Description |
 | :----------------- | :---------- |
-| CancelTaxTest.rb   | Demonstrates [AvaTax::TaxService.cancel](http://developer.avalara.com/avatax/tax/v1#cancelTax) used to [void a document](http://developer.avalara.com/avatax/tax/v1#voiding-documents) |
-| EstimateTaxTest.rb | Demonstrates the [AvaTax::TaxService.estimate](http://developer.avalara.com/avatax/tax/v1#estimateTax) method used for product- and line- indifferent tax estimates. |
-| GetTaxTest.rb      | Demonstrates the [AvaTax::TaxService.get](http://developer.avalara.com/avatax/tax/v1#getTax) method used for product- and line- specific [calculation](http://developer.avalara.com/avatax/calculating-tax). **NOTE:** This will generate a new transaction/document each time. |
-| PingTest.rb        | Uses a hardcoded `AvaTax::TaxService.estimate` call to test connectivity and credential information. |
-| ValidateTest.rb    | Demonstrates the [AvaTax::AddressService.validate](http://developer.avalara.com/avatax/tax/v1#validateAddress) method to [normalize an address](http://developer.avalara.com/avatax/address-validation). |
+| CancelTaxTest.rb   | Demonstrates [AvaTaxV1::TaxService.cancel](http://developer.avalara.com/avatax/tax/v1#cancelTax) used to [void a document](http://developer.avalara.com/avatax/tax/v1#voiding-documents) |
+| EstimateTaxTest.rb | Demonstrates the [AvaTaxV1::TaxService.estimate](http://developer.avalara.com/avatax/tax/v1#estimateTax) method used for product- and line- indifferent tax estimates. |
+| GetTaxTest.rb      | Demonstrates the [AvaTaxV1::TaxService.get](http://developer.avalara.com/avatax/tax/v1#getTax) method used for product- and line- specific [calculation](http://developer.avalara.com/avatax/calculating-tax). **NOTE:** This will generate a new transaction/document each time. |
+| PingTest.rb        | Uses a hardcoded `AvaTaxV1::TaxService.estimate` call to test connectivity and credential information. |
+| ValidateTest.rb    | Demonstrates the [AvaTaxV1::AddressService.validate](http://developer.avalara.com/avatax/tax/v1#validateAddress) method to [normalize an address](http://developer.avalara.com/avatax/address-validation). |

@@ -5,15 +5,15 @@ require 'base64'
 require 'rest-client'
 require_relative 'configuration'
 
-class AvaTax::TaxService
+class AvaTaxV1::TaxService
   @@service_path = "/1.0/tax/"
   attr_accessor :account_number, :license_key, :service_url
 
   def initialize()
-    #puts AvaTax::Configuration.instance.inspect
-    @account_number = AvaTax::Configuration.instance.account_number
-    @license_key = AvaTax::Configuration.instance.license_key
-    @service_url = AvaTax::Configuration.instance.service_url
+    #puts AvaTaxV1::Configuration.instance.inspect
+    @account_number = AvaTaxV1::Configuration.instance.account_number
+    @license_key = AvaTaxV1::Configuration.instance.license_key
+    @service_url = AvaTaxV1::Configuration.instance.service_url
   end
 
   def get(request_hash)

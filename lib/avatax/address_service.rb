@@ -4,14 +4,14 @@ require 'addressable/uri'
 require 'base64'
 require_relative 'configuration'
 
-class AvaTax::AddressService
+class AvaTaxV1::AddressService
   @@service_path = '/1.0/address/'
   attr_accessor :account_number, :license_key, :service_url
 
   def initialize()
-    @account_number = AvaTax::Configuration.instance.account_number
-    @license_key = AvaTax::Configuration.instance.license_key
-    @service_url = AvaTax::Configuration.instance.service_url
+    @account_number = AvaTaxV1::Configuration.instance.account_number
+    @license_key = AvaTaxV1::Configuration.instance.license_key
+    @service_url = AvaTaxV1::Configuration.instance.service_url
   end
 
   def validate(address)

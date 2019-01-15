@@ -1,6 +1,6 @@
 require 'singleton'
 
-module AvaTax
+module AvaTaxV1
   class Configuration
     include Singleton
 

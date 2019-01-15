@@ -1,5 +1,5 @@
 require_relative 'avatax/configuration'
-module AvaTax
+module AvaTaxV1
 
   def self.configure(&block)
     Configuration.instance.instance_eval(&block)

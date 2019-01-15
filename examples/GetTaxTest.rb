@@ -1,11 +1,11 @@
-require 'avatax'
+require 'avatax-v1'
 require 'date'
 
 # Header Level Elements
 # Required Header Level Elements
-AvaTax.configure_from 'credentials.yml'
+AvaTaxV1.configure_from 'credentials.yml'
 
-taxSvc = AvaTax::TaxService.new
+taxSvc = AvaTaxV1::TaxService.new
 
 getTaxRequest = {
   # Document Level Elements

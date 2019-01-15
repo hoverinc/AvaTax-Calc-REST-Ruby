@@ -1,10 +1,10 @@
-require 'avatax'
+require 'avatax-v1'
 
 # Header Level Elements
 # Required Header Level Elements
-AvaTax.configure_from 'credentials.yml'
+AvaTaxV1.configure_from 'credentials.yml'
 
-addressSvc = AvaTax::AddressService.new
+addressSvc = AvaTaxV1::AddressService.new
 
 validateRequest = {
   # Required Request Parameters
