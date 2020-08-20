@@ -12,5 +12,4 @@ Gem::Specification.new do |s|
   s.add_dependency 'json'
   s.add_dependency 'rest-client', '~> 1.7'
   s.add_dependency 'addressable', '~> 2.3'
-  s.add_dependency 'public_suffix', '< 4.0'
 end

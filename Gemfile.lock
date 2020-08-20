@@ -4,7 +4,6 @@ PATH
     avatax-v1 (15.0.1)
       addressable (~> 2.3)
       json
-      public_suffix (< 4.0)
       rest-client (~> 1.7)
 
 GEM
@@ -19,7 +18,7 @@ GEM
     json (2.3.1)
     mime-types (2.99.3)
     netrc (0.11.0)
-    public_suffix (3.1.1)
+    public_suffix (4.0.5)
     rest-client (1.8.0)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
